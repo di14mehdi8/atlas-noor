@@ -28,7 +28,7 @@
         <a href="../nl/index.html">NL</a>
       </div>
     </div>
-    <div class="nav__mobile" id="navToggle" onclick="document.getElementById('navLinks').classList.toggle('open')">
+    <div class="nav__mobile" id="navToggle" onclick="toggleMenu()">
       <span></span><span></span><span></span>
     </div>
   </nav>
@@ -732,21 +732,36 @@
 </footer>
 
 <script>
+/* Mobile menu toggle */
+function toggleMenu() {
+  document.getElementById('navLinks').classList.toggle('open');
+}
+
+/* Close menu when a nav link is tapped */
+(function() {
+  var links = document.querySelectorAll('#navLinks a:not(.lang-switch a)');
+  var nav = document.getElementById('navLinks');
+  links.forEach(function(link) {
+    link.addEventListener('click', function() {
+      nav.classList.remove('open');
+    });
+  });
+})();
+
 /* Product filter */
 function filterProducts(category, btn) {
-  const cards = document.querySelectorAll('.product-card');
-  const buttons = document.querySelectorAll('.categories button');
-  buttons.forEach(b => b.classList.remove('active'));
+  var cards = document.querySelectorAll('.product-card');
+  var buttons = document.querySelectorAll('.categories button');
+  buttons.forEach(function(b) { b.classList.remove('active'); });
   btn.classList.add('active');
-  cards.forEach(card => {
+  cards.forEach(function(card) {
     if (category === 'all' || card.dataset.category === category) {
       card.style.display = '';
     } else {
       card.style.display = 'none';
     }
   });
-  /* Re-trigger stagger on visible cards */
-  const grid = document.getElementById('productsGrid');
+  var grid = document.getElementById('productsGrid');
   grid.classList.remove('visible');
   void grid.offsetWidth;
   grid.classList.add('visible');
@@ -773,12 +788,9 @@ function filterProducts(category, btn) {
 /* Header shrink on scroll */
 (function() {
   var header = document.querySelector('.header');
-  var last = 0;
   window.addEventListener('scroll', function() {
-    var y = window.scrollY;
-    if (y > 60) { header.classList.add('scrolled'); }
+    if (window.scrollY > 60) { header.classList.add('scrolled'); }
     else { header.classList.remove('scrolled'); }
-    last = y;
   }, { passive: true });
 })();
 </script>
