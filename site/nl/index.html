@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Atlas Noor — Premium Halal Charcuterie | Belgie</title>
-  <meta name="description" content="Atlas Noor: gecertificeerde halal charcuterie van topkwaliteit, gemaakt in Belgie. Salami, gerookt vlees, pates, terrines en worst voor heel West-Europa.">
+  <title>Atlas Noor — Premium Halal Charcuterie | België</title>
+  <meta name="description" content="Atlas Noor: gecertificeerde halal charcuterie van topkwaliteit, gemaakt in België. Salami, gerookt vlees, pates, terrines en worst voor heel West-Europa.">
   <meta property="og:title" content="Atlas Noor — Premium Halal Charcuterie">
   <meta property="og:description" content="Belgische producent van premium halal charcuterie. Uitmuntende producten voor heel West-Europa.">
   <meta property="og:image" content="https://di14mehdi8.github.io/atlas-noor/assets/images/og-preview.jpg">
@@ -50,6 +50,7 @@
 <!-- ====== HERO ====== -->
 <section class="hero">
   <div class="container">
+    <div class="hero__particles" id="heroParticles"></div>
     <div class="hero__content">
       <div class="hero__text">
         <div class="hero__badge">
@@ -91,7 +92,7 @@
       </div>
       <div class="trust-item">
         <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V6h16v12zM6 10h2v2H6zm0 4h8v2H6zm10 0h2v2h-2zm-6-4h8v2h-8z"/></svg>
-        Gemaakt in Belgie
+        Gemaakt in België
       </div>
       <div class="trust-item">
         <svg viewBox="0 0 24 24"><path d="M17.21 9l-4.38-6.56c-.19-.28-.51-.42-.83-.42-.32 0-.64.14-.83.43L6.79 9H2c-.55 0-1 .45-1 1 0 .09.01.18.04.27l2.54 9.27c.23.84 1 1.46 1.92 1.46h13c.92 0 1.69-.62 1.93-1.46l2.54-9.27L23 10c0-.55-.45-1-1-1h-4.79zM9 9l3-4.4L15 9H9zm3 8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg>
@@ -577,11 +578,11 @@
     <div class="about__content">
       <div class="about__image reveal-left">
         <img src="../assets/images/products/salami-beef.jpg" alt="Atlas Noor Producten">
-        <div class="about__image-badge">Antwerpen, Belgie</div>
+        <div class="about__image-badge">Luik, België</div>
       </div>
       <div class="about__text reveal-right">
         <h2>Ons Verhaal</h2>
-        <p>Atlas Noor is ontstaan uit een passie voor uitmuntende charcuterie en respect voor halal tradities. Gevestigd in Antwerpen, in het hart van Europa, bereiden wij onze producten met de beste ingredienten en ambachtelijk vakmanschap dat van generatie op generatie wordt doorgegeven.</p>
+        <p>Atlas Noor is ontstaan uit een passie voor uitmuntende charcuterie en respect voor halal tradities. Gevestigd in Luik, in het hart van Europa, bereiden wij onze producten met de beste ingredienten en ambachtelijk vakmanschap dat van generatie op generatie wordt doorgegeven.</p>
         <p>Onze belofte: heel West-Europa voorzien van halal charcuterie van topkwaliteit, die authentieke smaak, strenge certificering en culinaire innovatie combineert.</p>
         <div class="about__features">
           <div class="about__feature">
@@ -633,6 +634,86 @@
   </div>
 </section>
 
+<!-- ====== STATS COUNTER ====== -->
+<section class="stats" id="statsSection">
+  <div class="container">
+    <div class="stats__grid">
+      <div class="stat-item">
+        <div class="stat-item__icon">
+          <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+        </div>
+        <div class="stat-item__number"><span class="counter" data-target="15">0</span><span class="counter-suffix">+</span></div>
+        <div class="stat-item__label">Jaren ervaring</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-item__icon">
+          <svg viewBox="0 0 24 24"><path d="M18.06 22.99h1.66c.84 0 1.53-.64 1.63-1.46L23 5.05h-5V1h-1.97v4.05h-4.97l.3 2.34c1.71.47 3.31 1.32 4.27 2.26 1.44 1.42 2.43 2.89 2.43 5.29v8.05zM1 21.99V21h15.03v.99c0 .55-.45 1-1.01 1H2.01c-.56 0-1.01-.45-1.01-1zm15.03-7c0-4.47-6.25-6-6.25-6s-6.25 1.53-6.25 6v5h12.5v-5z"/></svg>
+        </div>
+        <div class="stat-item__number"><span class="counter" data-target="40">0</span><span class="counter-suffix">+</span></div>
+        <div class="stat-item__label">Halal producten</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-item__icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+        </div>
+        <div class="stat-item__number"><span class="counter" data-target="12">0</span><span class="counter-suffix">+</span></div>
+        <div class="stat-item__label">Landen bediend</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-item__icon">
+          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+        </div>
+        <div class="stat-item__number"><span class="counter" data-target="100">0</span><span class="counter-suffix">%</span></div>
+        <div class="stat-item__label">Halal gecertificeerd</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== PROCESS ====== -->
+<section class="section" id="proces">
+  <div class="container">
+    <div class="section__header reveal">
+      <h2>Ons Vakmanschap</h2>
+      <p>Van de zorgvuldige selectie van grondstoffen tot de levering — elke stap garandeert uitmuntendheid en naleving van de halal normen.</p>
+    </div>
+    <div class="process__grid stagger-children">
+      <div class="process-step">
+        <div class="process-step__number">1</div>
+        <div class="process-step__icon">
+          <svg viewBox="0 0 24 24"><path d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25z"/></svg>
+        </div>
+        <h3>Premium Selectie</h3>
+        <p>Zorgvuldig geselecteerde ingrediënten van gecertificeerde en gecontroleerde leveranciers.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-step__number">2</div>
+        <div class="process-step__icon">
+          <svg viewBox="0 0 24 24"><path d="M18.06 22.99h1.66c.84 0 1.53-.64 1.63-1.46L23 5.05h-5V1h-1.97v4.05h-4.97l.3 2.34c1.71.47 3.31 1.32 4.27 2.26 1.44 1.42 2.43 2.89 2.43 5.29v8.05zM1 21.99V21h15.03v.99c0 .55-.45 1-1.01 1H2.01c-.56 0-1.01-.45-1.01-1zm15.03-7c0-4.47-6.25-6-6.25-6s-6.25 1.53-6.25 6v5h12.5v-5z"/></svg>
+        </div>
+        <h3>Ambachtelijke Bereiding</h3>
+        <p>Traditionele recepten bereid door onze meester-charcutiers met eeuwenoud vakmanschap.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-step__number">3</div>
+        <div class="process-step__icon">
+          <svg viewBox="0 0 24 24"><path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/></svg>
+        </div>
+        <h3>Kwaliteitscontrole</h3>
+        <p>Strenge tests bij elke stap: halal certificering, voedselveiligheid, volledige traceerbaarheid.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-step__number">4</div>
+        <div class="process-step__icon">
+          <svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+        </div>
+        <h3>Levering Europa</h3>
+        <p>Verzending via de koelketen naar heel West-Europa met realtime tracking.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ====== CONTACT ====== -->
 <section class="section section--cream" id="contact">
   <div class="container">
@@ -644,7 +725,7 @@
           <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
           <div>
             <strong>Adres</strong>
-            <span>Antwerpen, Belgie</span>
+            <span>Avenue Joseph Prevers 29, 4000 Luik, België</span>
           </div>
         </div>
         <div class="contact__detail">
@@ -658,7 +739,7 @@
           <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
           <div>
             <strong>Telefoon</strong>
-            <span>+32 (0)3 XXX XX XX</span>
+            <span>+32 496 46 53 99</span>
           </div>
         </div>
       </div>
@@ -687,6 +768,28 @@
           </div>
           <button type="submit" class="btn btn--submit">Bericht Versturen</button>
         </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== CTA BANNER ====== -->
+<section class="cta-banner" id="ctaBanner">
+  <div class="cta-banner__content">
+    <h2>Klaar om <span>halal excellence</span> te ontdekken?</h2>
+    <p>Sluit u aan bij ons partnernetwerk in heel Europa. Distributeurs, detailhandelaren en horecaprofessionals — samen bieden wij het beste.</p>
+    <a href="#contact" class="btn btn--primary">
+      Catalogus Aanvragen
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+    <div class="cta-banner__contacts">
+      <div class="cta-banner__contact-item">
+        <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        +32 496 46 53 99
+      </div>
+      <div class="cta-banner__contact-item">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        info@atlasnoor.be
       </div>
     </div>
   </div>
@@ -721,9 +824,9 @@
       <div>
         <h4>Contact</h4>
         <ul>
-          <li>Antwerpen, Belgie</li>
+          <li>Avenue Joseph Prevers 29, 4000 Luik, België</li>
           <li>info@atlasnoor.be</li>
-          <li>+32 (0)3 XXX XX XX</li>
+          <li>+32 496 46 53 99</li>
         </ul>
       </div>
     </div>
@@ -780,17 +883,60 @@ function filterProducts(category, btn) {
   grid.classList.add('visible');
 }
 
+/* Hero floating particles */
+(function() {
+  var container = document.getElementById('heroParticles');
+  if (!container) return;
+  for (var i = 0; i < 12; i++) {
+    var p = document.createElement('div');
+    p.className = 'hero__particle';
+    var size = Math.random() * 6 + 3;
+    p.style.width = size + 'px';
+    p.style.height = size + 'px';
+    p.style.left = Math.random() * 100 + '%';
+    p.style.animationDuration = (Math.random() * 12 + 8) + 's';
+    p.style.animationDelay = (Math.random() * 8) + 's';
+    container.appendChild(p);
+  }
+})();
+
+/* Counter animation */
+function animateCounters() {
+  var counters = document.querySelectorAll('.counter');
+  counters.forEach(function(el) {
+    var target = parseInt(el.getAttribute('data-target'));
+    var duration = 2000;
+    var start = 0;
+    var startTime = null;
+    function step(ts) {
+      if (!startTime) startTime = ts;
+      var progress = Math.min((ts - startTime) / duration, 1);
+      var eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.floor(eased * target);
+      if (progress < 1) requestAnimationFrame(step);
+      else el.textContent = target;
+    }
+    requestAnimationFrame(step);
+  });
+}
+
 /* Scroll-reveal observer */
 (function() {
-  var targets = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale, .stagger-children, .about__features, .footer__grid');
+  var targets = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale, .stagger-children, .about__features, .footer__grid, .stats, .process__grid, .cta-banner');
   if (!('IntersectionObserver' in window)) {
     targets.forEach(function(t) { t.classList.add('visible'); });
+    animateCounters();
     return;
   }
+  var countersDone = false;
   var observer = new IntersectionObserver(function(entries) {
     entries.forEach(function(entry) {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
+        if (entry.target.classList.contains('stats') && !countersDone) {
+          countersDone = true;
+          animateCounters();
+        }
         observer.unobserve(entry.target);
       }
     });
